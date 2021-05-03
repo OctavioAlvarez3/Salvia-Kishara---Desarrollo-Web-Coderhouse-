@@ -395,6 +395,7 @@ h1{
 .contenedorContacto__titulo{
     color: #531a53;
     padding-bottom: 3rem;
+    text-align: center;
 }
 
 .contenedorContacto__form{
@@ -511,3 +512,142 @@ h1{
     color: #884388 ;
 }
 
+/*Pagina carrito.html*/
+.carrito{
+    background-color: #eef1f6;
+}
+
+.carrito__h1{
+    margin-bottom: 3rem;
+    color: #6b266b;
+}
+
+.contenedorLogoCarrito{
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+   
+}
+
+.contenedorLogoCarrito__logo{
+    width: 15rem;
+    height: 11rem;
+}
+
+@media(max-width:768px){
+    .contenedorLogoCarrito{
+        height: 200px;
+    }
+
+    .contenedorLogoCarrito__logo{
+        text-align: center;
+        width: 10rem;
+        height: 7rem;
+    }
+}
+
+
+
+@media(max-width:768px){
+    .contenedorCompra{
+        flex-direction: column;
+    }
+}
+
+
+
+.contenedorCompra{
+    width: 1000px;
+    height: 600px;  
+    margin: 0 auto;
+    display: flex;  
+}
+
+
+.contenedorCompra__imagenes1{
+    display: flex;
+}
+
+.contenedorCompra__imagenes2{
+    display: flex;
+}
+
+
+.contenedorCompra__img{
+    width: 250px;
+    height: 230px;
+    border: 2px solid white;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 13px 30px -4px rgba(10,1,10,0.53);
+    -moz-box-shadow: 3px 13px 30px -4px rgba(10,1,10,0.53);
+    box-shadow: 3px 13px 30px -4px rgba(10,1,10,0.53);
+    transition: all .5s;
+    margin: .5rem;
+}
+
+@media(max-width:768px){
+    .contenedorCompra__img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media(max-width:768px){
+    .contenedorCompra__contenedorImagenes{
+        margin-left: 2rem;
+    }
+}
+
+
+.contenedorCompraFormulario__form{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 600px;
+    width: 600px;
+    padding: 3rem 10rem 10rem 3rem;
+}
+
+.contenedorCompraFormulario__label{
+    display: flex;
+    flex-direction: column;
+    color: #3b103b;
+    font-size: 25px;
+}
+
+.contenedorCompraFormulario__input{
+    border:none;
+    border-radius: 10px;
+}
+
+
+.contenedorCompraFormulario__boton{
+    width: 12rem;
+    height: 3rem;
+    margin-left: 5rem;
+    margin-top: 1rem;
+    font-size: 20px;
+    color: #6b266b;
+    font-family: 'Quicksand', sans-serif;
+    border: 2px solid #6b266b;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 1s;
+    
+    
+}
+
+.contenedorCompraFormulario__boton:hover{
+    background-color: #9c569c;
+    color: #fff;
+}
+
+@media(max-width:768px){
+    .contenedorCompraFormulario__boton{
+        margin-left: 6rem;
+    }
+}
