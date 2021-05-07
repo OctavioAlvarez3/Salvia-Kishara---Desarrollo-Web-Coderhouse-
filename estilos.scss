@@ -1,0 +1,43 @@
+@mixin estilosLabel{
+    margin: 0 auto;
+    padding-bottom: 4rem;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    font-weight: bold;
+    color: #6b266b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+@mixin estilosIconosFooter{
+    font-size: 3rem;
+    padding: 0px 15px;
+    color: #884388;
+}
+
+
+
+.contenedorContacto__label{
+    @include estilosLabel;
+}
+
+.contenedorFooter__icono{
+    @include estilosIconosFooter;
+}
+
+
+.header__parrafos1{
+    .header__parrafo1{
+        font-size: 50px;
+        color: #065359;
+        margin-bottom: 1rem;
+    }
+}
+
+.header__parrafos2{
+    .header__parrafo2{
+        font-size: 28px;
+    }
+}
